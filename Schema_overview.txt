@@ -1,0 +1,17 @@
+Schema Overview
+
+Entities:
+Equipment: Machinery or devices used in production.
+Part: Components of equipment that may need maintenance or replacement.
+Maintenance Task: Scheduled or completed tasks for upkeep.
+Issue: Problems or malfunctions with equipment.
+Resolution: Actions taken to resolve issues.
+Worker: Maintenance staff or operators responsible for tasks and reporting issues.
+Text, Image, Video: Multimedia content that documents maintenance activities, issues, or resolutions.
+
+Relationships:
+PERFORMS_TASK: Worker ? Maintenance Task
+AFFECTS: Issue ? Equipment
+RESOLVED_BY: Issue ? Resolution
+HAS_TEXT, HAS_IMAGE, HAS_VIDEO: Connects Maintenance Task, Issue, or Resolution to multimedia content
+REPORTS_ISSUE: Worker ? Issue
