@@ -1,0 +1,71 @@
+// Insert Equipment
+CREATE (e1:Equipment {id: "EQ-001", name: "Conveyor Belt"});
+CREATE (e2:Equipment {id: "EQ-002", name: "Drill Press"});
+
+// Insert Parts
+CREATE (p1:Part {id: "P-001", name: "Motor", part_of: "EQ-001"});
+CREATE (p2:Part {id: "P-002", name: "Belt", part_of: "EQ-001"});
+
+// Insert Workers
+CREATE (w1:Worker {id: "W-001", name: "Samira Patel", role: "Technician"});
+CREATE (w2:Worker {id: "W-002", name: "Jamie Lee", role: "Operator"});
+
+// Insert Maintenance Tasks
+CREATE (mt1:MaintenanceTask {id: "MT-001", description: "Inspect Motor"});
+CREATE (mt2:MaintenanceTask {id: "MT-002", description: "Replace Belt"});
+
+// Insert Issues
+CREATE (i1:Issue {id: "I-001", description: "Motor Overheating", severity: "High"});
+CREATE (i2:Issue {id: "I-002", description: "Belt Slipping", severity: "Medium"});
+
+// Insert Resolutions
+CREATE (r1:Resolution {id: "R-001", action: "Lubricate Motor"});
+CREATE (r2:Resolution {id: "R-002", action: "Tighten Belt"});
+
+// Insert Multimedia (Text)
+CREATE (m1:Multimedia {
+  id: "M-001",
+  type: "text",
+  content: "Motor overheating reported.",
+  creation_date: "2024-11-17",
+  tags: ["motor", "overheating", "issue"],
+  embedding: [0.45, 0.23, -0.78]
+});
+
+// Insert Multimedia (Image)
+CREATE (m2:Multimedia {
+  id: "M-002",
+  type: "image",
+  url: "s3://bucket-name/image_of_motor.jpg",
+  resolution: "1920x1080",
+  format: "jpg",
+  creation_date: "2024-11-17",
+  tags: ["motor", "damage", "visual"],
+  embedding: [0.12, 0.34, -0.56]
+});
+
+// Insert Multimedia (Audio)
+CREATE (m3:Multimedia {
+  id: "M-003",
+  type: "audio",
+  url: "s3://bucket-name/motor_overheat.wav",
+  duration: 120,
+  format: "wav",
+  transcription: "The motor is making unusual noise.",
+  creation_date: "2024-11-17",
+  tags: ["motor", "noise", "audio"],
+  embedding: [0.18, 0.29, -0.47]
+});
+
+// Insert Multimedia (Video)
+CREATE (m4:Multimedia {
+  id: "M-004",
+  type: "video",
+  url: "s3://bucket-name/motor_overheat.mp4",
+  resolution: "1920x1080",
+  format: "mp4",
+  duration: 300,
+  creation_date: "2024-11-17",
+  tags: ["motor", "operation", "video"],
+  embedding: [0.14, 0.28, -0.63]
+});

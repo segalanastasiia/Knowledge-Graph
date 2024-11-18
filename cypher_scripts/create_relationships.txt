@@ -1,0 +1,43 @@
+// Define Relationships
+
+// Parts belong to Equipment
+MATCH (p:Part {id: "P-001"}), (e:Equipment {id: "EQ-001"})
+MERGE (p)-[:PART_OF]->(e);
+
+MATCH (p:Part {id: "P-002"}), (e:Equipment {id: "EQ-001"})
+MERGE (p)-[:PART_OF]->(e);
+
+// Maintenance Tasks involve Parts
+MATCH (mt:MaintenanceTask {id: "MT-001"}), (p:Part {id: "P-001"})
+MERGE (mt)-[:USES]->(p);
+
+MATCH (mt:MaintenanceTask {id: "MT-002"}), (p:Part {id: "P-002"})
+MERGE (mt)-[:USES]->(p);
+
+// Workers perform Maintenance Tasks
+MATCH (w:Worker {id: "W-001"}), (mt:MaintenanceTask {id: "MT-001"})
+MERGE (w)-[:PERFORMS_TASK]->(mt);
+
+MATCH (w:Worker {id: "W-002"}), (mt:MaintenanceTask {id: "MT-002"})
+MERGE (w)-[:PERFORMS_TASK]->(mt);
+
+// Issues affect Equipment and Parts
+MATCH (i:Issue {id: "I-001"}), (e:Equipment {id: "EQ-001"})
+MERGE (i)-[:AFFECTS]->(e);
+
+MATCH (i:Issue {id: "I-002"}), (p:Part {id: "P-002"})
+MERGE (i)-[:AFFECTS]->(p);
+
+// Issues resolved by Resolutions
+MATCH (i:Issue {id: "I-001"}), (r:Resolution {id: "R-001"})
+MERGE (i)-[:RESOLVED_BY]->(r);
+
+MATCH (i:Issue {id: "I-002"}), (r:Resolution {id: "R-002"})
+MERGE (i)-[:RESOLVED_BY]->(r);
+
+// Multimedia documents Issues
+MATCH (m:Multimedia {id: "M-001"}), (i:Issue {id: "I-001"})
+MERGE (m)-[:DOCUMENTS]->(i);
+
+MATCH (m:Multimedia {id: "M-002"}), (i:Issue {id: "I-002"})
+MERGE (m)-[:DOCUMENTS]->(i);
