@@ -1,26 +1,87 @@
 // Insert Equipment
 CREATE (e1:Equipment {id: "EQ-001", name: "Conveyor Belt"});
 CREATE (e2:Equipment {id: "EQ-002", name: "Drill Press"});
+CREATE (e3:Equipment {id: "EQ-003", name: "Welding Machine"});
+CREATE (e4:Equipment {id: "EQ-004", name: "Lathe Machine"});
+CREATE (e5:Equipment {id: "EQ-005", name: "Forklift"});
+CREATE (e6:Equipment {id: "EQ-006", name: "CNC Router"});
+CREATE (e7:Equipment {id: "EQ-007", name: "Hydraulic Press"});
+CREATE (e8:Equipment {id: "EQ-008", name: "Laser Cutter"});
+CREATE (e9:Equipment {id: "EQ-009", name: "Milling Machine"});
+CREATE (e10:Equipment {id: "EQ-010", name: "3D Printer"});
 
 // Insert Parts
 CREATE (p1:Part {id: "P-001", name: "Motor", part_of: "EQ-001"});
 CREATE (p2:Part {id: "P-002", name: "Belt", part_of: "EQ-001"});
+CREATE (p3:Part {id: "P-003", name: "Drill Bit", part_of: "EQ-002"});
+CREATE (p4:Part {id: "P-004", name: "Spindle", part_of: "EQ-002"});
+CREATE (p5:Part {id: "P-005", name: "Welding Torch", part_of: "EQ-003"});
+CREATE (p6:Part {id: "P-006", name: "Electrode Holder", part_of: "EQ-003"});
+CREATE (p7:Part {id: "P-007", name: "Chuck", part_of: "EQ-004"});
+CREATE (p8:Part {id: "P-008", name: "Tool Post", part_of: "EQ-004"});
+CREATE (p9:Part {id: "P-009", name: "Forks", part_of: "EQ-005"});
+CREATE (p10:Part {id: "P-010", name: "Lift Cylinder", part_of: "EQ-005"});
+CREATE (p11:Part {id: "P-011", name: "Router Bit", part_of: "EQ-006"});
+CREATE (p12:Part {id: "P-012", name: "Servo Motor", part_of: "EQ-006"});
+CREATE (p13:Part {id: "P-013", name: "Hydraulic Pump", part_of: "EQ-007"});
+CREATE (p14:Part {id: "P-014", name: "Pressure Gauge", part_of: "EQ-007"});
+CREATE (p15:Part {id: "P-015", name: "Laser Head", part_of: "EQ-008"});
+CREATE (p16:Part {id: "P-016", name: "Cooling System", part_of: "EQ-008"});
+CREATE (p17:Part {id: "P-017", name: "Milling Cutter", part_of: "EQ-009"});
+CREATE (p18:Part {id: "P-018", name: "Feed Mechanism", part_of: "EQ-009"});
+CREATE (p19:Part {id: "P-019", name: "Extruder", part_of: "EQ-010"});
+CREATE (p20:Part {id: "P-020", name: "Print Bed", part_of: "EQ-010"});
 
 // Insert Workers
 CREATE (w1:Worker {id: "W-001", name: "Samira Patel", role: "Technician"});
 CREATE (w2:Worker {id: "W-002", name: "Jamie Lee", role: "Operator"});
+CREATE (w3:Worker {id: "W-003", name: "Carlos Mendez", role: "Maintenance"});
+CREATE (w4:Worker {id: "W-004", name: "Rita Gomez", role: "Supervisor"});
+CREATE (w5:Worker {id: "W-005", name: "Ethan Zhang", role: "Engineer"});
+CREATE (w6:Worker {id: "W-006", name: "Olivia Smith", role: "Technician"});
+CREATE (w7:Worker {id: "W-007", name: "Liam Johnson", role: "Operator"});
+CREATE (w8:Worker {id: "W-008", name: "Maya Thompson", role: "Logistics"});
+CREATE (w9:Worker {id: "W-009", name: "Noah Robinson", role: "Safety Officer"});
+CREATE (w10:Worker {id: "W-010", name: "Sophia White", role: "Quality Control"});
 
 // Insert Maintenance Tasks
 CREATE (mt1:MaintenanceTask {id: "MT-001", description: "Inspect Motor"});
 CREATE (mt2:MaintenanceTask {id: "MT-002", description: "Replace Belt"});
+CREATE (mt3:MaintenanceTask {id: "MT-003", description: "Calibrate Drill Press"});
+CREATE (mt4:MaintenanceTask {id: "MT-004", description: "Check Hydraulic Pressure"});
+CREATE (mt5:MaintenanceTask {id: "MT-005", description: "Replace Welding Torch"});
+CREATE (mt6:MaintenanceTask {id: "MT-006", description: "Clean CNC Router"});
+CREATE (mt7:MaintenanceTask {id: "MT-007", description: "Lubricate Lathe Machine"});
+CREATE (mt8:MaintenanceTask {id: "MT-008", description: "Inspect Forklift Tires"});
+CREATE (mt9:MaintenanceTask {id: "MT-009", description: "Test Laser Cutter Calibration"});
+CREATE (mt10:MaintenanceTask {id: "MT-010", description: "Replace Milling Machine Spindle"});
+CREATE (mt11:MaintenanceTask {id: "MT-011", description: "Service 3D Printer Extruder"});
 
 // Insert Issues
 CREATE (i1:Issue {id: "I-001", description: "Motor Overheating", severity: "High"});
 CREATE (i2:Issue {id: "I-002", description: "Belt Slipping", severity: "Medium"});
+CREATE (i3:Issue {id: "I-003", description: "Welding Machine Malfunction", severity: "High"});
+CREATE (i4:Issue {id: "I-004", description: "Lathe Machine Vibration", severity: "Low"});
+CREATE (i5:Issue {id: "I-005", description: "Forklift Battery Failure", severity: "High"});
+CREATE (i6:Issue {id: "I-006", description: "CNC Router Software Error", severity: "Medium"});
+CREATE (i7:Issue {id: "I-007", description: "Hydraulic Press Leak", severity: "High"});
+CREATE (i8:Issue {id: "I-008", description: "Laser Cutter Focus Issue", severity: "Low"});
+CREATE (i9:Issue {id: "I-009", description: "Milling Machine Jam", severity: "Medium"});
+CREATE (i10:Issue {id: "I-010", description: "3D Printer Extruder Blockage", severity: "High"});
+CREATE (i11:Issue {id: "I-011", description: "Forklift Hydraulic Failure", severity: "High"});
 
 // Insert Resolutions
 CREATE (r1:Resolution {id: "R-001", action: "Lubricate Motor"});
 CREATE (r2:Resolution {id: "R-002", action: "Tighten Belt"});
+CREATE (r3:Resolution {id: "R-003", action: "Replace Welding Torch"});
+CREATE (r4:Resolution {id: "R-004", action: "Balance Lathe Machine"});
+CREATE (r5:Resolution {id: "R-005", action: "Charge Forklift Battery"});
+CREATE (r6:Resolution {id: "R-006", action: "Reinstall CNC Router Software"});
+CREATE (r7:Resolution {id: "R-007", action: "Seal Hydraulic Press Leak"});
+CREATE (r8:Resolution {id: "R-008", action: "Adjust Laser Cutter Focus"});
+CREATE (r9:Resolution {id: "R-009", action: "Clear Milling Machine Jam"});
+CREATE (r10:Resolution {id: "R-010", action: "Clear 3D Printer Extruder Blockage"});
+CREATE (r11:Resolution {id: "R-011", action: "Repair Forklift Hydraulic System"});
 
 // Insert Multimedia (Text)
 CREATE (m1:Multimedia {
@@ -30,6 +91,14 @@ CREATE (m1:Multimedia {
   creation_date: "2024-11-17",
   tags: ["motor", "overheating", "issue"],
   embedding: [0.45, 0.23, -0.78]
+});
+CREATE (m5:Multimedia {
+  id: "M-005",
+  type: "text",
+  content: "Hydraulic press showing a pressure drop.",
+  creation_date: "2024-11-20",
+  tags: ["hydraulic", "press", "issue"],
+  embedding: [0.67, -0.32, 0.92]
 });
 
 // Insert Multimedia (Image)
@@ -42,6 +111,16 @@ CREATE (m2:Multimedia {
   creation_date: "2024-11-17",
   tags: ["motor", "damage", "visual"],
   embedding: [0.12, 0.34, -0.56]
+});
+CREATE (m7:Multimedia {
+  id: "M-006",
+  type: "image",
+  url: "s3://bucket-name/image_of_forklift_battery.jpg",
+  resolution: "1280x720",
+  format: "jpg",
+  creation_date: "2024-11-20",
+  tags: ["forklift", "battery", "maintenance"],
+  embedding: [0.56, 0.78, -0.34]
 });
 
 // Insert Multimedia (Audio)
@@ -56,6 +135,17 @@ CREATE (m3:Multimedia {
   tags: ["motor", "noise", "audio"],
   embedding: [0.18, 0.29, -0.47]
 });
+CREATE (m6:Multimedia {
+  id: "M-007",
+  type: "audio",
+  url: "s3://bucket-name/lathe_machine_vibration.wav",
+  duration: 100,
+  format: "mp3",
+  transcription: "Lathe machine producing unusual vibrations.",
+  creation_date: "2024-11-19",
+  tags: ["lathe", "vibration", "audio"],
+  embedding: [0.45, 0.12, -0.34]
+});
 
 // Insert Multimedia (Video)
 CREATE (m4:Multimedia {
@@ -68,4 +158,15 @@ CREATE (m4:Multimedia {
   creation_date: "2024-11-17",
   tags: ["motor", "operation", "video"],
   embedding: [0.14, 0.28, -0.63]
+});
+CREATE (m6:Multimedia {
+  id: "M-008",
+  type: "video",
+  url: "s3://bucket-name/welding_machine_malfunction.mp4",
+  resolution: "2560x1440",
+  format: "avi",
+  duration: 400,
+  creation_date: "2024-11-19",
+  tags: ["welding", "machine", "video"],
+  embedding: [-0.12, 0.45, 0.34]
 });
