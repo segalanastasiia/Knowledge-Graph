@@ -112,7 +112,7 @@ CREATE (m2:Multimedia {
   tags: ["motor", "damage", "visual"],
   embedding: [0.12, 0.34, -0.56]
 });
-CREATE (m7:Multimedia {
+CREATE (m6:Multimedia {
   id: "M-006",
   type: "image",
   url: "s3://bucket-name/image_of_forklift_battery.jpg",
@@ -135,7 +135,7 @@ CREATE (m3:Multimedia {
   tags: ["motor", "noise", "audio"],
   embedding: [0.18, 0.29, -0.47]
 });
-CREATE (m6:Multimedia {
+CREATE (m7:Multimedia {
   id: "M-007",
   type: "audio",
   url: "s3://bucket-name/lathe_machine_vibration.wav",
@@ -159,7 +159,7 @@ CREATE (m4:Multimedia {
   tags: ["motor", "operation", "video"],
   embedding: [0.14, 0.28, -0.63]
 });
-CREATE (m6:Multimedia {
+CREATE (m8:Multimedia {
   id: "M-008",
   type: "video",
   url: "s3://bucket-name/welding_machine_malfunction.mp4",
