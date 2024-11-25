@@ -40,4 +40,11 @@ MATCH (m:Multimedia {id: "M-001"}), (i:Issue {id: "I-001"})
 MERGE (m)-[:DOCUMENTS]->(i);
 
 MATCH (m:Multimedia {id: "M-002"}), (i:Issue {id: "I-002"})
-MERGE (m)-[:DOCUMENTS]->(i);
+MERGE (m)-[:DOCUMENTS]->(I);
+
+// Add Equipment causes Issues
+MATCH (e:Equipment {id: "EQ-001"}), (i:Issue {id: "I-001"})
+MERGE (e)-[:CAUSES]->(i);
+
+MATCH (e:Equipment {id: "EQ-007"}), (i:Issue {id: "I-007"})
+MERGE (e)-[:CAUSES]->(i);
