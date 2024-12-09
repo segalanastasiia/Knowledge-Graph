@@ -1,0 +1,7 @@
+,,,,,,
+,id,description,severity,reported_date,status,
+,I-001,Motor overheating intermittently,high,2024-11-01,resolved,
+,I-002,Conveyor belt misalignment,medium,2024-11-05,open,
+,I-003,CNC spindle vibration at high RPM,medium,2024-11-10,in_progress,
+,I-004,Hydraulic press losing pressure,high,2024-11-15,open,
+,I-005,Forklift battery not holding charge,high,2024-11-20,resolved,

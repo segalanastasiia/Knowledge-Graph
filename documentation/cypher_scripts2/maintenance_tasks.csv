@@ -1,0 +1,7 @@
+,,,,,,
+,id,description,scheduled_date,completed_date,task_type,priority
+,MT-001,Inspect Drive Motor,2024-11-01,2024-11-02,inspection,medium
+,MT-002,Replace Conveyor Belt Segment,2024-11-05,2024-11-06,replacement,high
+,MT-003,Calibrate CNC Machine Spindle,2024-11-10,2024-11-11,calibration,medium
+,MT-004,Check Hydraulic Cylinder Seals,2024-11-15,,inspection,high
+,MT-005,Forklift Battery Maintenance,2024-11-20,2024-11-20,maintenance,low

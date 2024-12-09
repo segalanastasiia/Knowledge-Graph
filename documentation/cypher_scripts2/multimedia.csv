@@ -1,0 +1,7 @@
+,,,,,,,,
+,id,type,url_or_content,resolution_or_duration,format_or_tags,creation_date,tags,embedding
+,M-001,text,Motor overheating reported. High temperature observed ~90°C.,,,2024-11-01,"issue,motor,overheating","0.12,0.33,-0.55"
+,M-002,image,s3://company-bucket/equipment/eq001_motor_overheat.jpg,1280x720,jpg,2024-11-01,"motor,thermal_image,maintenance","-0.45,0.12,0.89"
+,M-003,audio,s3://company-bucket/audio/eq004_battery_issue.wav,90sec,wav,2024-11-20,"forklift,battery,issue,audio","0.22,-0.14,0.67"
+,M-004,video,s3://company-bucket/video/conveyor_misalignment.mp4,1920x1080,mp4,2024-11-05,"conveyor,alignment,video","-0.11,0.44,-0.22"
+,M-005,pdf,s3://company-bucket/docs/hydraulic_press_leak_report.pdf,,pdf,2024-11-16,"hydraulic,report,issue","0.10,-0.20,0.55"

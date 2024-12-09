@@ -1,0 +1,6 @@
+,,,,,,
+,id,name,type,location,manufacturer,install_date
+,EQ-001,Conveyor Belt A1,Conveyor,Line 1,Acme Corp,2023-01-15
+,EQ-002,CNC Milling Machine B4,CNC Machine,Line 2,MachTech,2022-07-10
+,EQ-003,Hydraulic Press H2,Press,Line 3,PressMaster,2021-09-05
+,EQ-004,Forklift F12,Forklift,Warehouse,LiftCo,2021-03-20
