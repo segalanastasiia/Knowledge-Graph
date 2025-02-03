@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "machine_5",
+      "label": "Machine",
+      "properties": {
+        "machineName": "Milling Machine M-500",
+        "location": "Production Area B",
+        "manufacturer": "Milling Solutions Inc",
+        "createdAt": "2025-05-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "part_5",
+      "label": "Part",
+      "properties": {
+        "partName": "Coolant System CS-555",
+        "partNumber": "CS-555",
+        "supplier": "CoolTech Systems",
+        "createdAt": "2025-05-01T08:30:00Z"
+      }
+    },
+    {
+      "id": "supervisor_5",
+      "label": "Supervisor",
+      "properties": {
+        "name": "Olivia Brown",
+        "role": "Operations Supervisor",
+        "email": "olivia.brown@example.com"
+      }
+    },
+    {
+      "id": "worker_5",
+      "label": "Worker",
+      "properties": {
+        "name": "James White",
+        "role": "Maintenance Specialist",
+        "shift": "Morning",
+        "email": "james.white@example.com"
+      }
+    },
+    {
+      "id": "manual_5",
+      "label": "Manual",
+      "properties": {
+        "title": "Coolant System Troubleshooting",
+        "version": "3.0",
+        "author": "Tech Support",
+        "createdAt": "2025-04-25T10:00:00Z"
+      }
+    },
+    {
+      "id": "report_5",
+      "label": "Report",
+      "properties": {
+        "reportTitle": "Coolant Leak Report",
+        "reportDate": "2025-05-01T10:00:00Z",
+        "summary": "Leak detected in the coolant system of Milling Machine M-500"
+      }
+    },
+    {
+      "id": "error_5",
+      "label": "Error",
+      "properties": {
+        "errorTitle": "Leak Error",
+        "errorCode": "ERR-450",
+        "description": "Coolant system showing signs of leakage",
+        "loggedAt": "2025-05-01T09:30:00Z"
+      }
+    },
+    {
+      "id": "task_5",
+      "label": "Task",
+      "properties": {
+        "taskTitle": "Repair Coolant Leak",
+        "description": "Identify and fix the leak in the coolant system",
+        "createdAt": "2025-05-01T09:45:00Z",
+        "status": "Pending"
+      }
+    },
+    {
+      "id": "solution_5",
+      "label": "Solution",
+      "properties": {
+        "solutionTitle": "Seal Leak and Replace Damaged Parts",
+        "description": "Seal the leak and replace any corroded components",
+        "approvedBy": "Olivia Brown",
+        "approvedAt": "2025-05-01T10:15:00Z"
+      }
+    },
+    {
+      "id": "multimedia_5",
+      "label": "Multimedia",
+      "properties": {
+        "mediaType": "Video",
+        "fileName": "coolant_leak.mp4",
+        "fileURL": "https://example.com/media/coolant_leak.mp4",
+        "uploadedAt": "2025-05-01T10:05:00Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_51",
+      "type": "HAS_PART",
+      "startNode": "machine_5",
+      "endNode": "part_5",
+      "properties": {
+        "since": "2025-04-30T00:00:00Z"
+      }
+    },
+    {
+      "id": "edge_52",
+      "type": "HAS_ERROR",
+      "startNode": "machine_5",
+      "endNode": "error_5",
+      "properties": {
+        "severity": "High"
+      }
+    },
+    {
+      "id": "edge_53",
+      "type": "REQUIRES_TASK",
+      "startNode": "error_5",
+      "endNode": "task_5",
+      "properties": {
+        "reason": "Coolant leak affecting machine performance"
+      }
+    },
+    {
+      "id": "edge_54",
+      "type": "HAS_SOLUTION",
+      "startNode": "task_5",
+      "endNode": "solution_5",
+      "properties": {
+        "priority": "Critical"
+      }
+    },
+    {
+      "id": "edge_55",
+      "type": "ASSIGNED_BY",
+      "startNode": "task_5",
+      "endNode": "supervisor_5",
+      "properties": {
+        "assignedAt": "2025-05-01T09:50:00Z"
+      }
+    },
+    {
+      "id": "edge_56",
+      "type": "ASSIGNED_TO",
+      "startNode": "task_5",
+      "endNode": "worker_5",
+      "properties": {
+        "dueDate": "2025-05-01T17:00:00Z"
+      }
+    },
+    {
+      "id": "edge_57",
+      "type": "DESCRIBES_PART",
+      "startNode": "manual_5",
+      "endNode": "part_5",
+      "properties": {
+        "section": "Section 4 - Coolant Systems"
+      }
+    },
+    {
+      "id": "edge_58",
+      "type": "DOCUMENTED_BY",
+      "startNode": "task_5",
+      "endNode": "report_5",
+      "properties": {
+        "documentedAt": "2025-05-01T10:00:00Z"
+      }
+    },
+    {
+      "id": "edge_59",
+      "type": "REPORTS_ERROR",
+      "startNode": "report_5",
+      "endNode": "error_5",
+      "properties": {
+        "reportSection": "Leak Analysis"
+      }
+    },
+    {
+      "id": "edge_60",
+      "type": "HAS_MEDIA",
+      "startNode": "report_5",
+      "endNode": "multimedia_5",
+      "properties": {
+        "description": "Video capturing the coolant leak"
+      }
+    }
+  ]
+}

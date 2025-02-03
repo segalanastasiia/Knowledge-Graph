@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "machine_3",
+      "label": "Machine",
+      "properties": {
+        "machineName": "Drill D-300",
+        "location": "Workshop A",
+        "manufacturer": "DrillMaster Ltd",
+        "createdAt": "2025-03-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "part_3",
+      "label": "Part",
+      "properties": {
+        "partName": "Drill Bit DB-101",
+        "partNumber": "DB-101",
+        "supplier": "CuttingEdge Tools",
+        "createdAt": "2025-03-01T08:30:00Z"
+      }
+    },
+    {
+      "id": "supervisor_3",
+      "label": "Supervisor",
+      "properties": {
+        "name": "Karen Black",
+        "role": "Workshop Supervisor",
+        "email": "karen.black@example.com"
+      }
+    },
+    {
+      "id": "worker_3",
+      "label": "Worker",
+      "properties": {
+        "name": "Samuel Carter",
+        "role": "Technician",
+        "shift": "Evening",
+        "email": "samuel.carter@example.com"
+      }
+    },
+    {
+      "id": "manual_3",
+      "label": "Manual",
+      "properties": {
+        "title": "Drill Bit Replacement Guide",
+        "version": "1.0",
+        "author": "Maintenance Dept",
+        "createdAt": "2025-02-25T10:00:00Z"
+      }
+    },
+    {
+      "id": "report_3",
+      "label": "Report",
+      "properties": {
+        "reportTitle": "Drill Overheating Report",
+        "reportDate": "2025-03-01T10:30:00Z",
+        "summary": "Drill D-300 reported overheating during operation"
+      }
+    },
+    {
+      "id": "error_3",
+      "label": "Error",
+      "properties": {
+        "errorTitle": "Overheating Error",
+        "errorCode": "ERR-820",
+        "description": "Drill temperature exceeded safe limit",
+        "loggedAt": "2025-03-01T10:00:00Z"
+      }
+    },
+    {
+      "id": "task_3",
+      "label": "Task",
+      "properties": {
+        "taskTitle": "Clean and Lubricate Drill",
+        "description": "Perform cleaning and lubrication to reduce overheating",
+        "createdAt": "2025-03-01T10:15:00Z",
+        "status": "In Progress"
+      }
+    },
+    {
+      "id": "solution_3",
+      "label": "Solution",
+      "properties": {
+        "solutionTitle": "Lubricate and Reassemble Drill",
+        "description": "Clean internal components and apply lubrication",
+        "approvedBy": "Karen Black",
+        "approvedAt": "2025-03-01T10:20:00Z"
+      }
+    },
+    {
+      "id": "multimedia_3",
+      "label": "Multimedia",
+      "properties": {
+        "mediaType": "Image",
+        "fileName": "drill_overheating.jpg",
+        "fileURL": "https://example.com/media/drill_overheating.jpg",
+        "uploadedAt": "2025-03-01T10:25:00Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_31",
+      "type": "HAS_PART",
+      "startNode": "machine_3",
+      "endNode": "part_3",
+      "properties": {
+        "since": "2025-02-28T00:00:00Z"
+      }
+    },
+    {
+      "id": "edge_32",
+      "type": "HAS_ERROR",
+      "startNode": "machine_3",
+      "endNode": "error_3",
+      "properties": {
+        "severity": "Medium"
+      }
+    },
+    {
+      "id": "edge_33",
+      "type": "REQUIRES_TASK",
+      "startNode": "error_3",
+      "endNode": "task_3",
+      "properties": {
+        "reason": "Overheating due to lack of maintenance"
+      }
+    },
+    {
+      "id": "edge_34",
+      "type": "HAS_SOLUTION",
+      "startNode": "task_3",
+      "endNode": "solution_3",
+      "properties": {
+        "priority": "Normal"
+      }
+    },
+    {
+      "id": "edge_35",
+      "type": "ASSIGNED_BY",
+      "startNode": "task_3",
+      "endNode": "supervisor_3",
+      "properties": {
+        "assignedAt": "2025-03-01T10:10:00Z"
+      }
+    },
+    {
+      "id": "edge_36",
+      "type": "ASSIGNED_TO",
+      "startNode": "task_3",
+      "endNode": "worker_3",
+      "properties": {
+        "dueDate": "2025-03-01T18:00:00Z"
+      }
+    },
+    {
+      "id": "edge_37",
+      "type": "DESCRIBES_PART",
+      "startNode": "manual_3",
+      "endNode": "part_3",
+      "properties": {
+        "section": "Section 2 - Drill Bits"
+      }
+    },
+    {
+      "id": "edge_38",
+      "type": "DOCUMENTED_BY",
+      "startNode": "task_3",
+      "endNode": "report_3",
+      "properties": {
+        "documentedAt": "2025-03-01T10:30:00Z"
+      }
+    },
+    {
+      "id": "edge_39",
+      "type": "REPORTS_ERROR",
+      "startNode": "report_3",
+      "endNode": "error_3",
+      "properties": {
+        "reportSection": "Temperature Analysis"
+      }
+    },
+    {
+      "id": "edge_40",
+      "type": "HAS_MEDIA",
+      "startNode": "report_3",
+      "endNode": "multimedia_3",
+      "properties": {
+        "description": "Image showing drill overheating"
+      }
+    }
+  ]
+}

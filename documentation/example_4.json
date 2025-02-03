@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "machine_4",
+      "label": "Machine",
+      "properties": {
+        "machineName": "Conveyor C-400",
+        "location": "Assembly Line 1",
+        "manufacturer": "Conveyor Systems Co",
+        "createdAt": "2025-04-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "part_4",
+      "label": "Part",
+      "properties": {
+        "partName": "Belt B-404",
+        "partNumber": "B-404",
+        "supplier": "BeltMakers Ltd",
+        "createdAt": "2025-04-01T08:30:00Z"
+      }
+    },
+    {
+      "id": "supervisor_4",
+      "label": "Supervisor",
+      "properties": {
+        "name": "Michael Adams",
+        "role": "Production Supervisor",
+        "email": "michael.adams@example.com"
+      }
+    },
+    {
+      "id": "worker_4",
+      "label": "Worker",
+      "properties": {
+        "name": "Lisa Wong",
+        "role": "Maintenance Engineer",
+        "shift": "Night",
+        "email": "lisa.wong@example.com"
+      }
+    },
+    {
+      "id": "manual_4",
+      "label": "Manual",
+      "properties": {
+        "title": "Conveyor Belt Maintenance Manual",
+        "version": "1.1",
+        "author": "Maintenance Dept",
+        "createdAt": "2025-03-25T10:00:00Z"
+      }
+    },
+    {
+      "id": "report_4",
+      "label": "Report",
+      "properties": {
+        "reportTitle": "Belt Misalignment Report",
+        "reportDate": "2025-04-01T10:00:00Z",
+        "summary": "Detected misalignment in the conveyor belt system"
+      }
+    },
+    {
+      "id": "error_4",
+      "label": "Error",
+      "properties": {
+        "errorTitle": "Misalignment Error",
+        "errorCode": "ERR-305",
+        "description": "Conveyor belt deviating from its alignment",
+        "loggedAt": "2025-04-01T09:30:00Z"
+      }
+    },
+    {
+      "id": "task_4",
+      "label": "Task",
+      "properties": {
+        "taskTitle": "Realign Belt",
+        "description": "Adjust the belt alignment to optimal settings",
+        "createdAt": "2025-04-01T09:45:00Z",
+        "status": "In Progress"
+      }
+    },
+    {
+      "id": "solution_4",
+      "label": "Solution",
+      "properties": {
+        "solutionTitle": "Adjust Tension and Alignment",
+        "description": "Realign the belt and adjust tension for proper tracking",
+        "approvedBy": "Michael Adams",
+        "approvedAt": "2025-04-01T10:10:00Z"
+      }
+    },
+    {
+      "id": "multimedia_4",
+      "label": "Multimedia",
+      "properties": {
+        "mediaType": "Image",
+        "fileName": "belt_misalignment.jpg",
+        "fileURL": "https://example.com/media/belt_misalignment.jpg",
+        "uploadedAt": "2025-04-01T10:05:00Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_41",
+      "type": "HAS_PART",
+      "startNode": "machine_4",
+      "endNode": "part_4",
+      "properties": {
+        "since": "2025-03-31T00:00:00Z"
+      }
+    },
+    {
+      "id": "edge_42",
+      "type": "HAS_ERROR",
+      "startNode": "machine_4",
+      "endNode": "error_4",
+      "properties": {
+        "severity": "Medium"
+      }
+    },
+    {
+      "id": "edge_43",
+      "type": "REQUIRES_TASK",
+      "startNode": "error_4",
+      "endNode": "task_4",
+      "properties": {
+        "reason": "Misalignment causing operational issues"
+      }
+    },
+    {
+      "id": "edge_44",
+      "type": "HAS_SOLUTION",
+      "startNode": "task_4",
+      "endNode": "solution_4",
+      "properties": {
+        "priority": "High"
+      }
+    },
+    {
+      "id": "edge_45",
+      "type": "ASSIGNED_BY",
+      "startNode": "task_4",
+      "endNode": "supervisor_4",
+      "properties": {
+        "assignedAt": "2025-04-01T09:50:00Z"
+      }
+    },
+    {
+      "id": "edge_46",
+      "type": "ASSIGNED_TO",
+      "startNode": "task_4",
+      "endNode": "worker_4",
+      "properties": {
+        "dueDate": "2025-04-01T18:00:00Z"
+      }
+    },
+    {
+      "id": "edge_47",
+      "type": "DESCRIBES_PART",
+      "startNode": "manual_4",
+      "endNode": "part_4",
+      "properties": {
+        "section": "Section 5 - Belt Systems"
+      }
+    },
+    {
+      "id": "edge_48",
+      "type": "DOCUMENTED_BY",
+      "startNode": "task_4",
+      "endNode": "report_4",
+      "properties": {
+        "documentedAt": "2025-04-01T10:00:00Z"
+      }
+    },
+    {
+      "id": "edge_49",
+      "type": "REPORTS_ERROR",
+      "startNode": "report_4",
+      "endNode": "error_4",
+      "properties": {
+        "reportSection": "Operational Impact"
+      }
+    },
+    {
+      "id": "edge_50",
+      "type": "HAS_MEDIA",
+      "startNode": "report_4",
+      "endNode": "multimedia_4",
+      "properties": {
+        "description": "Image capturing the misaligned belt"
+      }
+    }
+  ]
+}
