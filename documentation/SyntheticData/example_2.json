@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "machine_2",
+      "label": "Machine",
+      "properties": {
+        "machineName": "Lathe L-200",
+        "location": "Factory Floor 2",
+        "manufacturer": "PrecisionLathes Inc",
+        "createdAt": "2025-02-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "part_2",
+      "label": "Part",
+      "properties": {
+        "partName": "Hydraulic Pump HP-300",
+        "partNumber": "HP-300",
+        "supplier": "HydroTech Supplies",
+        "createdAt": "2025-02-01T09:00:00Z"
+      }
+    },
+    {
+      "id": "supervisor_2",
+      "label": "Supervisor",
+      "properties": {
+        "name": "David Lee",
+        "role": "Maintenance Supervisor",
+        "email": "david.lee@example.com"
+      }
+    },
+    {
+      "id": "worker_2",
+      "label": "Worker",
+      "properties": {
+        "name": "Erika Thomas",
+        "role": "Maintenance Technician",
+        "shift": "Afternoon",
+        "email": "erika.thomas@example.com"
+      }
+    },
+    {
+      "id": "manual_2",
+      "label": "Manual",
+      "properties": {
+        "title": "Lathe Operation Manual v2",
+        "version": "2.0",
+        "author": "Engineering Dept",
+        "createdAt": "2025-01-15T10:00:00Z"
+      }
+    },
+    {
+      "id": "report_2",
+      "label": "Report",
+      "properties": {
+        "reportTitle": "Hydraulic Leak Report",
+        "reportDate": "2025-02-01T10:00:00Z",
+        "summary": "Detected leak in the hydraulic pump of Lathe L-200"
+      }
+    },
+    {
+      "id": "error_2",
+      "label": "Error",
+      "properties": {
+        "errorTitle": "Pressure Loss Error",
+        "errorCode": "ERR-710",
+        "description": "Hydraulic pressure dropping below threshold",
+        "loggedAt": "2025-02-01T09:30:00Z"
+      }
+    },
+    {
+      "id": "task_2",
+      "label": "Task",
+      "properties": {
+        "taskTitle": "Replace Hydraulic Pump",
+        "description": "Install a new hydraulic pump to restore pressure",
+        "createdAt": "2025-02-01T09:45:00Z",
+        "status": "Pending"
+      }
+    },
+    {
+      "id": "solution_2",
+      "label": "Solution",
+      "properties": {
+        "solutionTitle": "Install New HP-300 Pump",
+        "description": "Replace the failing pump with a new HP-300 unit",
+        "approvedBy": "David Lee",
+        "approvedAt": "2025-02-01T10:15:00Z"
+      }
+    },
+    {
+      "id": "multimedia_2",
+      "label": "Multimedia",
+      "properties": {
+        "mediaType": "Video",
+        "fileName": "hydraulic_leak.mp4",
+        "fileURL": "https://example.com/media/hydraulic_leak.mp4",
+        "uploadedAt": "2025-02-01T10:05:00Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_21",
+      "type": "HAS_PART",
+      "startNode": "machine_2",
+      "endNode": "part_2",
+      "properties": {
+        "since": "2025-01-31T00:00:00Z"
+      }
+    },
+    {
+      "id": "edge_22",
+      "type": "HAS_ERROR",
+      "startNode": "machine_2",
+      "endNode": "error_2",
+      "properties": {
+        "severity": "High"
+      }
+    },
+    {
+      "id": "edge_23",
+      "type": "REQUIRES_TASK",
+      "startNode": "error_2",
+      "endNode": "task_2",
+      "properties": {
+        "reason": "Hydraulic pump failure"
+      }
+    },
+    {
+      "id": "edge_24",
+      "type": "HAS_SOLUTION",
+      "startNode": "task_2",
+      "endNode": "solution_2",
+      "properties": {
+        "priority": "Critical"
+      }
+    },
+    {
+      "id": "edge_25",
+      "type": "ASSIGNED_BY",
+      "startNode": "task_2",
+      "endNode": "supervisor_2",
+      "properties": {
+        "assignedAt": "2025-02-01T09:50:00Z"
+      }
+    },
+    {
+      "id": "edge_26",
+      "type": "ASSIGNED_TO",
+      "startNode": "task_2",
+      "endNode": "worker_2",
+      "properties": {
+        "dueDate": "2025-02-01T17:00:00Z"
+      }
+    },
+    {
+      "id": "edge_27",
+      "type": "DESCRIBES_PART",
+      "startNode": "manual_2",
+      "endNode": "part_2",
+      "properties": {
+        "section": "Section 3 - Hydraulic Systems"
+      }
+    },
+    {
+      "id": "edge_28",
+      "type": "DOCUMENTED_BY",
+      "startNode": "task_2",
+      "endNode": "report_2",
+      "properties": {
+        "documentedAt": "2025-02-01T10:00:00Z"
+      }
+    },
+    {
+      "id": "edge_29",
+      "type": "REPORTS_ERROR",
+      "startNode": "report_2",
+      "endNode": "error_2",
+      "properties": {
+        "reportSection": "Error Analysis"
+      }
+    },
+    {
+      "id": "edge_30",
+      "type": "HAS_MEDIA",
+      "startNode": "report_2",
+      "endNode": "multimedia_2",
+      "properties": {
+        "description": "Video evidence of hydraulic leak"
+      }
+    }
+  ]
+}

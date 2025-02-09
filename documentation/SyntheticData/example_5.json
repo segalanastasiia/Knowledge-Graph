@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "machine_1",
+      "label": "Machine",
+      "properties": {
+        "machineName": "Press A-100",
+        "location": "Factory Floor 1",
+        "manufacturer": "IndustrialPress Corp",
+        "createdAt": "2025-01-15T08:00:00Z"
+      }
+    },
+    {
+      "id": "part_1",
+      "label": "Part",
+      "properties": {
+        "partName": "Cooling Fan CF-9876",
+        "partNumber": "CF-9876",
+        "supplier": "CoolingTech Inc",
+        "createdAt": "2025-01-16T09:30:00Z"
+      }
+    },
+    {
+      "id": "supervisor_1",
+      "label": "Supervisor",
+      "properties": {
+        "name": "Alice Johnson",
+        "role": "Maintenance Supervisor",
+        "email": "alice.johnson@example.com"
+      }
+    },
+    {
+      "id": "worker_1",
+      "label": "Worker",
+      "properties": {
+        "name": "Bob Miller",
+        "role": "Maintenance Technician",
+        "shift": "Morning",
+        "email": "bob.miller@example.com"
+      }
+    },
+    {
+      "id": "manual_1",
+      "label": "Manual",
+      "properties": {
+        "title": "Cooling Fan Replacement Manual",
+        "version": "1.2",
+        "author": "Engineering Dept",
+        "createdAt": "2024-12-01T10:00:00Z"
+      }
+    },
+    {
+      "id": "report_1",
+      "label": "Report",
+      "properties": {
+        "reportTitle": "Fan Overheating Incident Report",
+        "reportDate": "2025-01-20T09:00:00Z",
+        "summary": "Summary of overheating incident on Press A-100"
+      }
+    },
+    {
+      "id": "error_1",
+      "label": "Error",
+      "properties": {
+        "errorTitle": "Overheating Error",
+        "errorCode": "ERR-503",
+        "description": "Machine temperature exceeded safe threshold",
+        "loggedAt": "2025-01-20T07:45:00Z"
+      }
+    },
+    {
+      "id": "task_1",
+      "label": "Task",
+      "properties": {
+        "taskTitle": "Replace Cooling Fan",
+        "description": "Replace the worn-out cooling fan to resolve overheating",
+        "createdAt": "2025-01-20T08:15:00Z",
+        "status": "Pending"
+      }
+    },
+    {
+      "id": "solution_1",
+      "label": "Solution",
+      "properties": {
+        "solutionTitle": "Install New CF-9876 Fan",
+        "description": "Replace old fan with a new CF-9876 model",
+        "approvedBy": "Alice Johnson",
+        "approvedAt": "2025-01-20T08:30:00Z"
+      }
+    },
+    {
+      "id": "multimedia_1",
+      "label": "Multimedia",
+      "properties": {
+        "mediaType": "Image",
+        "fileName": "fan_damage.jpg",
+        "fileURL": "https://example.com/media/fan_damage.jpg",
+        "uploadedAt": "2025-01-20T09:10:00Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_1",
+      "type": "HAS_PART",
+      "startNode": "machine_1",
+      "endNode": "part_1",
+      "properties": {
+        "since": "2024-11-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "edge_2",
+      "type": "HAS_ERROR",
+      "startNode": "machine_1",
+      "endNode": "error_1",
+      "properties": {
+        "severity": "High"
+      }
+    },
+    {
+      "id": "edge_3",
+      "type": "REQUIRES_TASK",
+      "startNode": "error_1",
+      "endNode": "task_1",
+      "properties": {
+        "reason": "Fan failure causing overheating"
+      }
+    },
+    {
+      "id": "edge_4",
+      "type": "HAS_SOLUTION",
+      "startNode": "task_1",
+      "endNode": "solution_1",
+      "properties": {
+        "priority": "Urgent"
+      }
+    },
+    {
+      "id": "edge_5",
+      "type": "ASSIGNED_BY",
+      "startNode": "task_1",
+      "endNode": "supervisor_1",
+      "properties": {
+        "assignedAt": "2025-01-20T08:20:00Z"
+      }
+    },
+    {
+      "id": "edge_6",
+      "type": "ASSIGNED_TO",
+      "startNode": "task_1",
+      "endNode": "worker_1",
+      "properties": {
+        "dueDate": "2025-01-20T17:00:00Z"
+      }
+    },
+    {
+      "id": "edge_7",
+      "type": "DESCRIBES_PART",
+      "startNode": "manual_1",
+      "endNode": "part_1",
+      "properties": {
+        "section": "Section 4 - Cooling Components"
+      }
+    },
+    {
+      "id": "edge_8",
+      "type": "DOCUMENTED_BY",
+      "startNode": "task_1",
+      "endNode": "report_1",
+      "properties": {
+        "documentedAt": "2025-01-20T09:00:00Z"
+      }
+    },
+    {
+      "id": "edge_9",
+      "type": "REPORTS_ERROR",
+      "startNode": "report_1",
+      "endNode": "error_1",
+      "properties": {
+        "reportSection": "Error Details"
+      }
+    },
+    {
+      "id": "edge_10",
+      "type": "HAS_MEDIA",
+      "startNode": "report_1",
+      "endNode": "multimedia_1",
+      "properties": {
+        "description": "Image showing damaged fan"
+      }
+    }
+  ]
+}
