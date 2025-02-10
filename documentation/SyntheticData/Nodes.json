@@ -1,0 +1,394 @@
+{
+  "data": [
+    {
+      "Machine": {
+        "id": "M001",
+        "name": "CNC Milling Machine",
+        "location": "Factory Floor A",
+        "status": "Operational",
+        "last_maintenance_date": "2025-01-15",
+        "supervisor_id": "S001"
+      },
+      "Part": {
+        "id": "P001",
+        "name": "Spindle Assembly",
+        "machine_id": "M001",
+        "material": "Steel",
+        "status": "Good",
+        "used_in": "CNC Milling Machine"
+      },
+      "Supervisor": {
+        "id": "S001",
+        "name": "John Smith",
+        "contact": "john.smith@example.com",
+        "shift": "Morning",
+        "responsible_machines": ["M001", "M002"]
+      },
+      "Manual": {
+        "id": "MN001",
+        "title": "CNC Machine User Manual",
+        "description": "Operating and maintenance guide for CNC machines",
+        "applies_to": ["M001"],
+        "url": "http://example.com/manuals/cnc.pdf"
+      },
+      "Worker": {
+        "id": "W001",
+        "name": "Alice Johnson",
+        "role": "Machine Operator",
+        "assigned_tasks": ["T001", "T002"],
+        "supervisor_id": "S001"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M002",
+        "name": "Injection Molding Machine",
+        "location": "Factory Floor B",
+        "status": "Maintenance Required",
+        "last_maintenance_date": "2024-12-20",
+        "supervisor_id": "S002"
+      },
+      "Part": {
+        "id": "P002",
+        "name": "Nozzle",
+        "machine_id": "M002",
+        "material": "Aluminum",
+        "status": "Damaged",
+        "used_in": "Injection Molding Machine"
+      },
+      "Supervisor": {
+        "id": "S002",
+        "name": "Jane Doe",
+        "contact": "jane.doe@example.com",
+        "shift": "Evening",
+        "responsible_machines": ["M002", "M003"]
+      },
+      "Manual": {
+        "id": "MN002",
+        "title": "Injection Molding Guidelines",
+        "description": "Setup and troubleshooting instructions",
+        "applies_to": ["M002"],
+        "url": "http://example.com/manuals/injection.pdf"
+      },
+      "Worker": {
+        "id": "W002",
+        "name": "Bob Carter",
+        "role": "Maintenance Technician",
+        "assigned_tasks": ["T003"],
+        "supervisor_id": "S002"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M003",
+        "name": "Laser Cutter",
+        "location": "Factory Floor C",
+        "status": "Operational",
+        "last_maintenance_date": "2025-02-01",
+        "supervisor_id": "S003"
+      },
+      "Part": {
+        "id": "P003",
+        "name": "Laser Diode",
+        "machine_id": "M003",
+        "material": "Gallium Arsenide",
+        "status": "Good",
+        "used_in": "Laser Cutter"
+      },
+      "Supervisor": {
+        "id": "S003",
+        "name": "Robert King",
+        "contact": "robert.king@example.com",
+        "shift": "Night",
+        "responsible_machines": ["M003"]
+      },
+      "Manual": {
+        "id": "MN003",
+        "title": "Laser Cutter Operating Manual",
+        "description": "Safety and operational procedures for the laser cutter",
+        "applies_to": ["M003"],
+        "url": "http://example.com/manuals/laser.pdf"
+      },
+      "Worker": {
+        "id": "W003",
+        "name": "Clara Lee",
+        "role": "Laser Machine Operator",
+        "assigned_tasks": ["T004"],
+        "supervisor_id": "S003"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M004",
+        "name": "3D Printer",
+        "location": "Prototype Lab",
+        "status": "Operational",
+        "last_maintenance_date": "2025-01-20",
+        "supervisor_id": "S004"
+      },
+      "Part": {
+        "id": "P004",
+        "name": "Extruder Head",
+        "machine_id": "M004",
+        "material": "Ceramic",
+        "status": "Replaced",
+        "used_in": "3D Printer"
+      },
+      "Supervisor": {
+        "id": "S004",
+        "name": "Mary Adams",
+        "contact": "mary.adams@example.com",
+        "shift": "Morning",
+        "responsible_machines": ["M004", "M005"]
+      },
+      "Manual": {
+        "id": "MN004",
+        "title": "3D Printer Maintenance Manual",
+        "description": "A guide to maintaining and troubleshooting 3D printers",
+        "applies_to": ["M004"],
+        "url": "http://example.com/manuals/3dprinter.pdf"
+      },
+      "Worker": {
+        "id": "W004",
+        "name": "Tom Jenkins",
+        "role": "Prototype Engineer",
+        "assigned_tasks": ["T005", "T006"],
+        "supervisor_id": "S004"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M005",
+        "name": "Hydraulic Press",
+        "location": "Factory Floor D",
+        "status": "Operational",
+        "last_maintenance_date": "2025-01-25",
+        "supervisor_id": "S004"
+      },
+      "Part": {
+        "id": "P005",
+        "name": "Piston Assembly",
+        "machine_id": "M005",
+        "material": "Steel Alloy",
+        "status": "Good",
+        "used_in": "Hydraulic Press"
+      },
+      "Supervisor": {
+        "id": "S004",
+        "name": "Mary Adams",
+        "contact": "mary.adams@example.com",
+        "shift": "Morning",
+        "responsible_machines": ["M004", "M005"]
+      },
+      "Manual": {
+        "id": "MN005",
+        "title": "Hydraulic Press Safety Manual",
+        "description": "Instructions for safe operation of the hydraulic press",
+        "applies_to": ["M005"],
+        "url": "http://example.com/manuals/hydraulic.pdf"
+      },
+      "Worker": {
+        "id": "W005",
+        "name": "Sarah Thompson",
+        "role": "Maintenance Engineer",
+        "assigned_tasks": ["T007"],
+        "supervisor_id": "S004"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M006",
+        "name": "Packaging Robot",
+        "location": "Packing Area",
+        "status": "Operational",
+        "last_maintenance_date": "2025-02-01",
+        "supervisor_id": "S005"
+      },
+      "Part": {
+        "id": "P006",
+        "name": "Gripper Arm",
+        "machine_id": "M006",
+        "material": "Composite Plastic",
+        "status": "Good",
+        "used_in": "Packaging Robot"
+      },
+      "Supervisor": {
+        "id": "S005",
+        "name": "Evelyn Turner",
+        "contact": "evelyn.turner@example.com",
+        "shift": "Evening",
+        "responsible_machines": ["M006", "M007"]
+      },
+      "Manual": {
+        "id": "MN006",
+        "title": "Packaging Robot Guide",
+        "description": "Setup and operational guide for robotic packaging",
+        "applies_to": ["M006"],
+        "url": "http://example.com/manuals/packagingrobot.pdf"
+      },
+      "Worker": {
+        "id": "W006",
+        "name": "Michael Brown",
+        "role": "Robot Operator",
+        "assigned_tasks": ["T008"],
+        "supervisor_id": "S005"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M007",
+        "name": "Air Compressor",
+        "location": "Utility Room",
+        "status": "Repair Required",
+        "last_maintenance_date": "2024-12-15",
+        "supervisor_id": "S005"
+      },
+      "Part": {
+        "id": "P007",
+        "name": "Compressor Motor",
+        "machine_id": "M007",
+        "material": "Cast Iron",
+        "status": "Faulty",
+        "used_in": "Air Compressor"
+      },
+      "Supervisor": {
+        "id": "S005",
+        "name": "Evelyn Turner",
+        "contact": "evelyn.turner@example.com",
+        "shift": "Evening",
+        "responsible_machines": ["M006", "M007"]
+      },
+      "Manual": {
+        "id": "MN007",
+        "title": "Air Compressor Manual",
+        "description": "Repair and troubleshooting guide for air compressors",
+        "applies_to": ["M007"],
+        "url": "http://example.com/manuals/aircompressor.pdf"
+      },
+      "Worker": {
+        "id": "W007",
+        "name": "Chris Young",
+        "role": "Maintenance Specialist",
+        "assigned_tasks": ["T009", "T010"],
+        "supervisor_id": "S005"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M008",
+        "name": "Lathe Machine",
+        "location": "Workshop B",
+        "status": "Operational",
+        "last_maintenance_date": "2025-01-18",
+        "supervisor_id": "S006"
+      },
+      "Part": {
+        "id": "P008",
+        "name": "Chuck Assembly",
+        "machine_id": "M008",
+        "material": "Carbon Steel",
+        "status": "Good",
+        "used_in": "Lathe Machine"
+      },
+      "Supervisor": {
+        "id": "S006",
+        "name": "George Wilson",
+        "contact": "george.wilson@example.com",
+        "shift": "Night",
+        "responsible_machines": ["M008"]
+      },
+      "Manual": {
+        "id": "MN008",
+        "title": "Lathe Machine User Guide",
+        "description": "User and maintenance instructions for lathe machines",
+        "applies_to": ["M008"],
+        "url": "http://example.com/manuals/lathe.pdf"
+      },
+      "Worker": {
+        "id": "W008",
+        "name": "Emily Davis",
+        "role": "Lathe Operator",
+        "assigned_tasks": ["T011"],
+        "supervisor_id": "S006"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M009",
+        "name": "Conveyor Belt System",
+        "location": "Sorting Area",
+        "status": "Operational",
+        "last_maintenance_date": "2025-01-10",
+        "supervisor_id": "S007"
+      },
+      "Part": {
+        "id": "P009",
+        "name": "Roller Assembly",
+        "machine_id": "M009",
+        "material": "Steel",
+        "status": "Replaced",
+        "used_in": "Conveyor Belt System"
+      },
+      "Supervisor": {
+        "id": "S007",
+        "name": "Anna Lopez",
+        "contact": "anna.lopez@example.com",
+        "shift": "Morning",
+        "responsible_machines": ["M009", "M010"]
+      },
+      "Manual": {
+        "id": "MN009",
+        "title": "Conveyor Belt Maintenance Manual",
+        "description": "Maintenance guidelines for conveyor belts",
+        "applies_to": ["M009"],
+        "url": "http://example.com/manuals/conveyor.pdf"
+      },
+      "Worker": {
+        "id": "W009",
+        "name": "Kevin Moore",
+        "role": "Assembly Line Operator",
+        "assigned_tasks": ["T012"],
+        "supervisor_id": "S007"
+      }
+    },
+    {
+      "Machine": {
+        "id": "M010",
+        "name": "Welding Robot",
+        "location": "Welding Bay",
+        "status": "Operational",
+        "last_maintenance_date": "2025-02-01",
+        "supervisor_id": "S007"
+      },
+      "Part": {
+        "id": "P010",
+        "name": "Welding Torch",
+        "machine_id": "M010",
+        "material": "Copper Alloy",
+        "status": "Good",
+        "used_in": "Welding Robot"
+      },
+      "Supervisor": {
+        "id": "S007",
+        "name": "Anna Lopez",
+        "contact": "anna.lopez@example.com",
+        "shift": "Morning",
+        "responsible_machines": ["M009", "M010"]
+      },
+      "Manual": {
+        "id": "MN010",
+        "title": "Welding Robot Operations Guide",
+        "description": "Operating instructions for robotic welding systems",
+        "applies_to": ["M010"],
+        "url": "http://example.com/manuals/welding.pdf"
+      },
+      "Worker": {
+        "id": "W010",
+        "name": "Sophia Taylor",
+        "role": "Welding Specialist",
+        "assigned_tasks": ["T013"],
+        "supervisor_id": "S007"
+      }
+    }
+  ]
+}
