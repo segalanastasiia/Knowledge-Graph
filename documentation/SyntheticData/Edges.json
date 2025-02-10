@@ -1,0 +1,94 @@
+{
+  "edges": [
+    {
+      "source": "Worker",
+      "target": "Supervisor",
+      "relationship": "REPORTS_TO",
+      "edges": [
+        { "source_id": "W001", "target_id": "S001" },
+        { "source_id": "W002", "target_id": "S001" },
+        { "source_id": "W003", "target_id": "S002" },
+        { "source_id": "W004", "target_id": "S004" },
+        { "source_id": "W005", "target_id": "S004" }
+      ]
+    },
+    {
+      "source": "Supervisor",
+      "target": "Machine",
+      "relationship": "RESPONSIBLE_FOR",
+      "edges": [
+        { "source_id": "S001", "target_id": "M001" },
+        { "source_id": "S001", "target_id": "M002" },
+        { "source_id": "S002", "target_id": "M003" },
+        { "source_id": "S004", "target_id": "M004" },
+        { "source_id": "S004", "target_id": "M005" }
+      ]
+    },
+    {
+      "source": "Machine",
+      "target": "Part",
+      "relationship": "USES",
+      "edges": [
+        { "source_id": "M001", "target_id": "P001" },
+        { "source_id": "M002", "target_id": "P002" },
+        { "source_id": "M003", "target_id": "P003" },
+        { "source_id": "M004", "target_id": "P004" },
+        { "source_id": "M005", "target_id": "P005" }
+      ]
+    },
+    {
+      "source": "Manual",
+      "target": "Machine",
+      "relationship": "APPLIES_TO",
+      "edges": [
+        { "source_id": "MN001", "target_id": "M001" },
+        { "source_id": "MN002", "target_id": "M002" },
+        { "source_id": "MN003", "target_id": "M003" },
+        { "source_id": "MN004", "target_id": "M004" },
+        { "source_id": "MN005", "target_id": "M005" }
+      ]
+    },
+    {
+      "source": "Worker",
+      "target": "Task",
+      "relationship": "ASSIGNED_TO",
+      "edges": [
+        { "source_id": "W001", "target_id": "T001" },
+        { "source_id": "W001", "target_id": "T002" },
+        { "source_id": "W002", "target_id": "T003" },
+        { "source_id": "W003", "target_id": "T004" },
+        { "source_id": "W004", "target_id": "T005" }
+      ]
+    },
+    {
+      "source": "Error",
+      "target": "Machine",
+      "relationship": "AFFECTS",
+      "edges": [
+        { "source_id": "E001", "target_id": "M001" },
+        { "source_id": "E002", "target_id": "M003" },
+        { "source_id": "E003", "target_id": "M007" }
+      ]
+    },
+    {
+      "source": "Solution",
+      "target": "Error",
+      "relationship": "RESOLVES",
+      "edges": [
+        { "source_id": "SOL001", "target_id": "E001" },
+        { "source_id": "SOL002", "target_id": "E002" },
+        { "source_id": "SOL003", "target_id": "E003" }
+      ]
+    },
+    {
+      "source": "Worker",
+      "target": "Solution",
+      "relationship": "EXECUTES",
+      "edges": [
+        { "source_id": "W001", "target_id": "SOL001" },
+        { "source_id": "W002", "target_id": "SOL002" },
+        { "source_id": "W003", "target_id": "SOL003" }
+      ]
+    }
+  ]
+}
