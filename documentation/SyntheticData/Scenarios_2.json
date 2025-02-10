@@ -1,0 +1,179 @@
+{
+  "error_scenarios": [
+    {
+      "scenario_id": "SC011",
+      "error": {
+        "error_id": "E011",
+        "description": "Machine M006 conveyor belt malfunctioning due to wear.",
+        "detected_by": "Worker Observation",
+        "reported_by": "W006",
+        "reported_to": "S005",
+        "manual_referenced": "MN006",
+        "report_id": "R011"
+      },
+      "solution": {
+        "solution_id": "SOL011",
+        "description": "Replaced conveyor belt following steps in Manual MN006.",
+        "executed_by": "W006",
+        "verified_by": "S005"
+      }
+    },
+    {
+      "scenario_id": "SC012",
+      "error": {
+        "error_id": "E012",
+        "description": "Machine M007 failing quality tests due to sensor misalignment.",
+        "detected_by": "Quality Control Inspection",
+        "reported_by": "W007",
+        "reported_to": "S006",
+        "multimedia": ["IMG005"],
+        "report_id": "R012"
+      },
+      "solution": {
+        "solution_id": "SOL012",
+        "description": "Realigned sensors and recalibrated Machine M007.",
+        "executed_by": "W007",
+        "verified_by": "S006"
+      }
+    },
+    {
+      "scenario_id": "SC013",
+      "error": {
+        "error_id": "E013",
+        "description": "Overheating in Machine M008 due to coolant leakage.",
+        "detected_by": "Sensor Alert",
+        "reported_by": "W008",
+        "reported_to": "S007",
+        "report_id": "R013"
+      },
+      "solution": {
+        "solution_id": "SOL013",
+        "description": "Coolant refilled, leak sealed.",
+        "executed_by": "W008",
+        "verified_by": "S007"
+      }
+    },
+    {
+      "scenario_id": "SC014",
+      "error": {
+        "error_id": "E014",
+        "description": "Machine M009 producing excess scrap material.",
+        "detected_by": "Production Monitoring System",
+        "manual_referenced": "MN009",
+        "reported_by": "W009",
+        "reported_to": "S008",
+        "report_id": "R014"
+      },
+      "solution": {
+        "solution_id": "SOL014",
+        "description": "Reconfigured Machine M009 settings based on Manual MN009.",
+        "executed_by": "W009",
+        "verified_by": "S008"
+      }
+    },
+    {
+      "scenario_id": "SC015",
+      "error": {
+        "error_id": "E015",
+        "description": "Irregular power fluctuations in Machine M010.",
+        "detected_by": "Automated System Alert",
+        "reported_by": "W010",
+        "reported_to": "S009",
+        "report_id": "R015"
+      },
+      "solution": {
+        "solution_id": "SOL015",
+        "description": "Electrical panel inspected and faulty wiring replaced.",
+        "executed_by": "W010",
+        "verified_by": "S009"
+      }
+    },
+    {
+      "scenario_id": "SC016",
+      "error": {
+        "error_id": "E016",
+        "description": "Machine M011 safety sensor failure detected.",
+        "detected_by": "Worker Inspection",
+        "multimedia": ["VID004"],
+        "reported_by": "W011",
+        "reported_to": "S010",
+        "report_id": "R016"
+      },
+      "solution": {
+        "solution_id": "SOL016",
+        "description": "Safety sensor recalibrated and tested successfully.",
+        "executed_by": "W011",
+        "verified_by": "S010"
+      }
+    },
+    {
+      "scenario_id": "SC017",
+      "error": {
+        "error_id": "E017",
+        "description": "Unexpected vibration levels in Machine M012.",
+        "detected_by": "Sensor Data Analysis",
+        "reported_by": "W012",
+        "reported_to": "S011",
+        "report_id": "R017"
+      },
+      "solution": {
+        "solution_id": "SOL017",
+        "description": "Stabilized foundation and tightened loose bolts.",
+        "executed_by": "W012",
+        "verified_by": "S011"
+      }
+    },
+    {
+      "scenario_id": "SC018",
+      "error": {
+        "error_id": "E018",
+        "description": "Machine M013 software error causing workflow interruptions.",
+        "detected_by": "Worker Report",
+        "manual_referenced": "MN013",
+        "reported_by": "W013",
+        "reported_to": "S012",
+        "report_id": "R018"
+      },
+      "solution": {
+        "solution_id": "SOL018",
+        "description": "Software patch applied based on Manual MN013.",
+        "executed_by": "W013",
+        "verified_by": "S012"
+      }
+    },
+    {
+      "scenario_id": "SC019",
+      "error": {
+        "error_id": "E019",
+        "description": "Machine M014 misfeeds materials into assembly line.",
+        "detected_by": "Operator Observation",
+        "reported_by": "W014",
+        "reported_to": "S013",
+        "report_id": "R019"
+      },
+      "solution": {
+        "solution_id": "SOL019",
+        "description": "Realigned material feeder to prevent misfeeds.",
+        "executed_by": "W014",
+        "verified_by": "S013"
+      }
+    },
+    {
+      "scenario_id": "SC020",
+      "error": {
+        "error_id": "E020",
+        "description": "Part P010 worn out, causing defects in Machine M015.",
+        "detected_by": "Routine Inspection",
+        "reported_by": "W015",
+        "reported_to": "S014",
+        "report_id": "R020"
+      },
+      "solution": {
+        "solution_id": "SOL020",
+        "description": "Part P010 replaced, defect rate reduced.",
+        "executed_by": "W015",
+        "verified_by": "S014"
+      }
+    }
+  ]
+}

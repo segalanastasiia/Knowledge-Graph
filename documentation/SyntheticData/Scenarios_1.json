@@ -1,0 +1,185 @@
+{
+  "error_scenarios": [
+    {
+      "scenario_id": "SC001",
+      "error": {
+        "error_id": "E001",
+        "description": "Machine M001 stopped unexpectedly due to overheating.",
+        "detected_by": "Sensor Alert",
+        "multimedia": ["IMG001", "VID001"],
+        "reported_by": "W001",
+        "reported_to": "S001",
+        "report_id": "R001"
+      },
+      "solution": {
+        "solution_id": "SOL001",
+        "description": "Cooling system recalibrated, excess dust removed.",
+        "executed_by": "W001",
+        "verified_by": "S001"
+      }
+    },
+    {
+      "scenario_id": "SC002",
+      "error": {
+        "error_id": "E002",
+        "description": "Machine M003 vibrating excessively, suspected misalignment.",
+        "detected_by": "Worker Observation",
+        "manual_referenced": "MN003",
+        "reported_by": "W002",
+        "reported_to": "S002",
+        "report_id": "R002"
+      },
+      "solution": {
+        "solution_id": "SOL002",
+        "description": "Alignment corrected using Manual MN003 steps.",
+        "executed_by": "W002",
+        "verified_by": "S002"
+      }
+    },
+    {
+      "scenario_id": "SC003",
+      "error": {
+        "error_id": "E003",
+        "description": "Machine M007 motor failure due to worn-out Part P005.",
+        "detected_by": "Routine Maintenance",
+        "reported_by": "W003",
+        "reported_to": "S004",
+        "multimedia": ["IMG002"],
+        "report_id": "R003"
+      },
+      "solution": {
+        "solution_id": "SOL003",
+        "description": "Motor replaced with new Part P005.",
+        "executed_by": "W003",
+        "verified_by": "S004"
+      }
+    },
+    {
+      "scenario_id": "SC004",
+      "error": {
+        "error_id": "E004",
+        "description": "Unexpected stoppage in Machine M004 due to software issue.",
+        "detected_by": "Automated System Alert",
+        "manual_referenced": "MN004",
+        "reported_by": "W004",
+        "reported_to": "S004",
+        "report_id": "R004"
+      },
+      "solution": {
+        "solution_id": "SOL004",
+        "description": "Software patch applied as per Manual MN004 instructions.",
+        "executed_by": "W004",
+        "verified_by": "S004"
+      }
+    },
+    {
+      "scenario_id": "SC005",
+      "error": {
+        "error_id": "E005",
+        "description": "Worker W005 reported Machine M005 producing defective items.",
+        "detected_by": "Quality Control Inspection",
+        "multimedia": ["VID002"],
+        "reported_by": "W005",
+        "reported_to": "S004",
+        "report_id": "R005"
+      },
+      "solution": {
+        "solution_id": "SOL005",
+        "description": "Recalibrated Part P004 to fix defect rate.",
+        "executed_by": "W005",
+        "verified_by": "S004"
+      }
+    },
+    {
+      "scenario_id": "SC006",
+      "error": {
+        "error_id": "E006",
+        "description": "Machine M002 has an oil leakage near Part P002.",
+        "detected_by": "Worker Inspection",
+        "manual_referenced": "MN002",
+        "multimedia": ["IMG003"],
+        "reported_by": "W002",
+        "reported_to": "S001",
+        "report_id": "R006"
+      },
+      "solution": {
+        "solution_id": "SOL006",
+        "description": "Gasket replaced, leakage stopped using Manual MN002.",
+        "executed_by": "W002",
+        "verified_by": "S001"
+      }
+    },
+    {
+      "scenario_id": "SC007",
+      "error": {
+        "error_id": "E007",
+        "description": "Part P003 failure caused unexpected downtime in Machine M003.",
+        "detected_by": "Worker Report",
+        "reported_by": "W003",
+        "reported_to": "S002",
+        "multimedia": ["IMG004"],
+        "report_id": "R007"
+      },
+      "solution": {
+        "solution_id": "SOL007",
+        "description": "Part P003 replaced, Machine M003 back online.",
+        "executed_by": "W003",
+        "verified_by": "S002"
+      }
+    },
+    {
+      "scenario_id": "SC008",
+      "error": {
+        "error_id": "E008",
+        "description": "Machine M005 experiencing overheating.",
+        "detected_by": "Sensor Alert",
+        "reported_by": "W005",
+        "reported_to": "S004",
+        "report_id": "R008"
+      },
+      "solution": {
+        "solution_id": "SOL008",
+        "description": "Cooling fans replaced, overheating resolved.",
+        "executed_by": "W005",
+        "verified_by": "S004"
+      }
+    },
+    {
+      "scenario_id": "SC009",
+      "error": {
+        "error_id": "E009",
+        "description": "Machine M001 has irregular speed fluctuations.",
+        "detected_by": "Worker Observation",
+        "manual_referenced": "MN001",
+        "multimedia": ["VID003"],
+        "reported_by": "W001",
+        "reported_to": "S001",
+        "report_id": "R009"
+      },
+      "solution": {
+        "solution_id": "SOL009",
+        "description": "Speed controller recalibrated using Manual MN001.",
+        "executed_by": "W001",
+        "verified_by": "S001"
+      }
+    },
+    {
+      "scenario_id": "SC010",
+      "error": {
+        "error_id": "E010",
+        "description": "Machine M004 has an unresponsive control panel.",
+        "detected_by": "Automated Alert",
+        "manual_referenced": "MN004",
+        "reported_by": "W004",
+        "reported_to": "S004",
+        "report_id": "R010"
+      },
+      "solution": {
+        "solution_id": "SOL010",
+        "description": "Control panel software reset following Manual MN004.",
+        "executed_by": "W004",
+        "verified_by": "S004"
+      }
+    }
+  ]
+}
