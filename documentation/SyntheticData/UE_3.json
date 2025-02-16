@@ -1,0 +1,12 @@
+{
+      "scenario_id": "UE003",
+      "error": {
+        "error_id": "E023",
+        "description": "Unusual noise from Machine M018 during operation.",
+        "detected_by": "Worker Observation",
+        "multimedia": ["AUDIO001"],
+        "reported_by": "W018",
+        "reported_to": "S017",
+        "report_id": "R023",
+        "status": "Pending mechanical inspection"
+      }

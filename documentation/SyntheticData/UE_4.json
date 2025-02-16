@@ -1,0 +1,11 @@
+{
+      "scenario_id": "UE004",
+      "error": {
+        "error_id": "E024",
+        "description": "Machine M019 rejecting materials unexpectedly.",
+        "detected_by": "Production Monitoring",
+        "reported_by": "W019",
+        "reported_to": "S018",
+        "report_id": "R024",
+        "status": "Escalated to engineering team"
+      }

@@ -1,0 +1,12 @@
+{
+      "scenario_id": "UE005",
+      "error": {
+        "error_id": "E025",
+        "description": "Machine M020 experiencing random shutdowns.",
+        "detected_by": "Worker Report",
+        "reported_by": "W020",
+        "reported_to": "S019",
+        "multimedia": ["IMG006"],
+        "report_id": "R025",
+        "status": "Waiting for root cause analysis"
+      }

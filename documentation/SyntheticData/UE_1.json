@@ -1,0 +1,11 @@
+{
+      "scenario_id": "UE001",
+      "error": {
+        "error_id": "E021",
+        "description": "Machine M016 producing inconsistent hole diameters.",
+        "detected_by": "Quality Inspection",
+        "reported_by": "W016",
+        "reported_to": "S015",
+        "report_id": "R021",
+        "status": "Pending investigation"
+      }

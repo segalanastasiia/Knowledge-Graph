@@ -1,0 +1,11 @@
+{
+      "scenario_id": "UE007",
+      "error": {
+        "error_id": "E027",
+        "description": "Machine M022 producing excessive dust.",
+        "detected_by": "Worker Observation",
+        "reported_by": "W022",
+        "reported_to": "S021",
+        "report_id": "R027",
+        "status": "Pending environmental safety team review"
+      }

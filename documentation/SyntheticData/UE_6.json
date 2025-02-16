@@ -1,0 +1,11 @@
+{
+      "scenario_id": "UE006",
+      "error": {
+        "error_id": "E026",
+        "description": "Part P011 overheating in Machine M021.",
+        "detected_by": "Temperature Sensor Alert",
+        "reported_by": "W021",
+        "reported_to": "S020",
+        "report_id": "R026",
+        "status": "No solution documented, requires investigation"
+      }
