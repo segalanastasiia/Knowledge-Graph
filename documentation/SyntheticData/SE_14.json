@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC014",
+      "error": {
+        "error_id": "E014",
+        "description": "Machine M009 producing excess scrap material.",
+        "detected_by": "Production Monitoring System",
+        "manual_referenced": "MN009",
+        "reported_by": "W009",
+        "reported_to": "S008",
+        "report_id": "R014"
+      },
+      "solution": {
+        "solution_id": "SOL014",
+        "description": "Reconfigured Machine M009 settings based on Manual MN009.",
+        "executed_by": "W009",
+        "verified_by": "S008"
+      }
+    }

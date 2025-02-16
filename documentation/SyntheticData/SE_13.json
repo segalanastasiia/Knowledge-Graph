@@ -1,0 +1,17 @@
+{
+      "scenario_id": "SC013",
+      "error": {
+        "error_id": "E013",
+        "description": "Overheating in Machine M008 due to coolant leakage.",
+        "detected_by": "Sensor Alert",
+        "reported_by": "W008",
+        "reported_to": "S007",
+        "report_id": "R013"
+      },
+      "solution": {
+        "solution_id": "SOL013",
+        "description": "Coolant refilled, leak sealed.",
+        "executed_by": "W008",
+        "verified_by": "S007"
+      }
+    }

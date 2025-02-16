@@ -1,0 +1,17 @@
+{
+      "scenario_id": "SC008",
+      "error": {
+        "error_id": "E008",
+        "description": "Machine M005 experiencing overheating.",
+        "detected_by": "Sensor Alert",
+        "reported_by": "W005",
+        "reported_to": "S004",
+        "report_id": "R008"
+      },
+      "solution": {
+        "solution_id": "SOL008",
+        "description": "Cooling fans replaced, overheating resolved.",
+        "executed_by": "W005",
+        "verified_by": "S004"
+      }
+    }

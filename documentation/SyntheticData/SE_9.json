@@ -1,0 +1,19 @@
+{
+      "scenario_id": "SC009",
+      "error": {
+        "error_id": "E009",
+        "description": "Machine M001 has irregular speed fluctuations.",
+        "detected_by": "Worker Observation",
+        "manual_referenced": "MN001",
+        "multimedia": ["VID003"],
+        "reported_by": "W001",
+        "reported_to": "S001",
+        "report_id": "R009"
+      },
+      "solution": {
+        "solution_id": "SOL009",
+        "description": "Speed controller recalibrated using Manual MN001.",
+        "executed_by": "W001",
+        "verified_by": "S001"
+      }
+    }

@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC010",
+      "error": {
+        "error_id": "E010",
+        "description": "Machine M004 has an unresponsive control panel.",
+        "detected_by": "Automated Alert",
+        "manual_referenced": "MN004",
+        "reported_by": "W004",
+        "reported_to": "S004",
+        "report_id": "R010"
+      },
+      "solution": {
+        "solution_id": "SOL010",
+        "description": "Control panel software reset following Manual MN004.",
+        "executed_by": "W004",
+        "verified_by": "S004"
+      }
+    }

@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC012",
+      "error": {
+        "error_id": "E012",
+        "description": "Machine M007 failing quality tests due to sensor misalignment.",
+        "detected_by": "Quality Control Inspection",
+        "reported_by": "W007",
+        "reported_to": "S006",
+        "multimedia": ["IMG005"],
+        "report_id": "R012"
+      },
+      "solution": {
+        "solution_id": "SOL012",
+        "description": "Realigned sensors and recalibrated Machine M007.",
+        "executed_by": "W007",
+        "verified_by": "S006"
+      }
+    }

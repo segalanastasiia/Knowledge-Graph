@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC004",
+      "error": {
+        "error_id": "E004",
+        "description": "Unexpected stoppage in Machine M004 due to software issue.",
+        "detected_by": "Automated System Alert",
+        "manual_referenced": "MN004",
+        "reported_by": "W004",
+        "reported_to": "S004",
+        "report_id": "R004"
+      },
+      "solution": {
+        "solution_id": "SOL004",
+        "description": "Software patch applied as per Manual MN004 instructions.",
+        "executed_by": "W004",
+        "verified_by": "S004"
+      }
+    }

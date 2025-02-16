@@ -1,0 +1,17 @@
+{
+      "scenario_id": "SC015",
+      "error": {
+        "error_id": "E015",
+        "description": "Irregular power fluctuations in Machine M010.",
+        "detected_by": "Automated System Alert",
+        "reported_by": "W010",
+        "reported_to": "S009",
+        "report_id": "R015"
+      },
+      "solution": {
+        "solution_id": "SOL015",
+        "description": "Electrical panel inspected and faulty wiring replaced.",
+        "executed_by": "W010",
+        "verified_by": "S009"
+      }
+    

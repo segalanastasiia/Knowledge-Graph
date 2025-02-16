@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC002",
+      "error": {
+        "error_id": "E002",
+        "description": "Machine M003 vibrating excessively, suspected misalignment.",
+        "detected_by": "Worker Observation",
+        "manual_referenced": "MN003",
+        "reported_by": "W002",
+        "reported_to": "S002",
+        "report_id": "R002"
+      },
+      "solution": {
+        "solution_id": "SOL002",
+        "description": "Alignment corrected using Manual MN003 steps.",
+        "executed_by": "W002",
+        "verified_by": "S002"
+      }
+    }

@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC001",
+      "error": {
+        "error_id": "E001",
+        "description": "Machine M001 stopped unexpectedly due to overheating.",
+        "detected_by": "Sensor Alert",
+        "multimedia": ["IMG001", "VID001"],
+        "reported_by": "W001",
+        "reported_to": "S001",
+        "report_id": "R001"
+      },
+      "solution": {
+        "solution_id": "SOL001",
+        "description": "Cooling system recalibrated, excess dust removed.",
+        "executed_by": "W001",
+        "verified_by": "S001"
+      }
+    }

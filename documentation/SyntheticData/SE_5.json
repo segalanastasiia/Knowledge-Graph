@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC005",
+      "error": {
+        "error_id": "E005",
+        "description": "Worker W005 reported Machine M005 producing defective items.",
+        "detected_by": "Quality Control Inspection",
+        "multimedia": ["VID002"],
+        "reported_by": "W005",
+        "reported_to": "S004",
+        "report_id": "R005"
+      },
+      "solution": {
+        "solution_id": "SOL005",
+        "description": "Recalibrated Part P004 to fix defect rate.",
+        "executed_by": "W005",
+        "verified_by": "S004"
+      }
+    }

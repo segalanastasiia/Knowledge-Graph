@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC018",
+      "error": {
+        "error_id": "E018",
+        "description": "Machine M013 software error causing workflow interruptions.",
+        "detected_by": "Worker Report",
+        "manual_referenced": "MN013",
+        "reported_by": "W013",
+        "reported_to": "S012",
+        "report_id": "R018"
+      },
+      "solution": {
+        "solution_id": "SOL018",
+        "description": "Software patch applied based on Manual MN013.",
+        "executed_by": "W013",
+        "verified_by": "S012"
+      }
+    }

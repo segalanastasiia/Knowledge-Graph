@@ -1,0 +1,17 @@
+{
+      "scenario_id": "SC020",
+      "error": {
+        "error_id": "E020",
+        "description": "Part P010 worn out, causing defects in Machine M015.",
+        "detected_by": "Routine Inspection",
+        "reported_by": "W015",
+        "reported_to": "S014",
+        "report_id": "R020"
+      },
+      "solution": {
+        "solution_id": "SOL020",
+        "description": "Part P010 replaced, defect rate reduced.",
+        "executed_by": "W015",
+        "verified_by": "S014"
+      }
+    }

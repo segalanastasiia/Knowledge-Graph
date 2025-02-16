@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC007",
+      "error": {
+        "error_id": "E007",
+        "description": "Part P003 failure caused unexpected downtime in Machine M003.",
+        "detected_by": "Worker Report",
+        "reported_by": "W003",
+        "reported_to": "S002",
+        "multimedia": ["IMG004"],
+        "report_id": "R007"
+      },
+      "solution": {
+        "solution_id": "SOL007",
+        "description": "Part P003 replaced, Machine M003 back online.",
+        "executed_by": "W003",
+        "verified_by": "S002"
+      }
+    }

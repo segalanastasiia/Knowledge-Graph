@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC003",
+      "error": {
+        "error_id": "E003",
+        "description": "Machine M007 motor failure due to worn-out Part P005.",
+        "detected_by": "Routine Maintenance",
+        "reported_by": "W003",
+        "reported_to": "S004",
+        "multimedia": ["IMG002"],
+        "report_id": "R003"
+      },
+      "solution": {
+        "solution_id": "SOL003",
+        "description": "Motor replaced with new Part P005.",
+        "executed_by": "W003",
+        "verified_by": "S004"
+      }
+    }

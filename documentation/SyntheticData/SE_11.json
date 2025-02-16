@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC011",
+      "error": {
+        "error_id": "E011",
+        "description": "Machine M006 conveyor belt malfunctioning due to wear.",
+        "detected_by": "Worker Observation",
+        "reported_by": "W006",
+        "reported_to": "S005",
+        "manual_referenced": "MN006",
+        "report_id": "R011"
+      },
+      "solution": {
+        "solution_id": "SOL011",
+        "description": "Replaced conveyor belt following steps in Manual MN006.",
+        "executed_by": "W006",
+        "verified_by": "S005"
+      }
+    }

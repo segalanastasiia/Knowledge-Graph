@@ -1,0 +1,18 @@
+{
+      "scenario_id": "SC016",
+      "error": {
+        "error_id": "E016",
+        "description": "Machine M011 safety sensor failure detected.",
+        "detected_by": "Worker Inspection",
+        "multimedia": ["VID004"],
+        "reported_by": "W011",
+        "reported_to": "S010",
+        "report_id": "R016"
+      },
+      "solution": {
+        "solution_id": "SOL016",
+        "description": "Safety sensor recalibrated and tested successfully.",
+        "executed_by": "W011",
+        "verified_by": "S010"
+      }
+    }

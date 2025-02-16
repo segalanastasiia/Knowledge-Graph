@@ -1,0 +1,17 @@
+{
+      "scenario_id": "SC019",
+      "error": {
+        "error_id": "E019",
+        "description": "Machine M014 misfeeds materials into assembly line.",
+        "detected_by": "Operator Observation",
+        "reported_by": "W014",
+        "reported_to": "S013",
+        "report_id": "R019"
+      },
+      "solution": {
+        "solution_id": "SOL019",
+        "description": "Realigned material feeder to prevent misfeeds.",
+        "executed_by": "W014",
+        "verified_by": "S013"
+      }
+    }

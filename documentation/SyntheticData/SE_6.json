@@ -1,0 +1,19 @@
+ {
+      "scenario_id": "SC006",
+      "error": {
+        "error_id": "E006",
+        "description": "Machine M002 has an oil leakage near Part P002.",
+        "detected_by": "Worker Inspection",
+        "manual_referenced": "MN002",
+        "multimedia": ["IMG003"],
+        "reported_by": "W002",
+        "reported_to": "S001",
+        "report_id": "R006"
+      },
+      "solution": {
+        "solution_id": "SOL006",
+        "description": "Gasket replaced, leakage stopped using Manual MN002.",
+        "executed_by": "W002",
+        "verified_by": "S001"
+      }
+    }

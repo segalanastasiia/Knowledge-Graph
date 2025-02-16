@@ -1,0 +1,17 @@
+{
+      "scenario_id": "SC017",
+      "error": {
+        "error_id": "E017",
+        "description": "Unexpected vibration levels in Machine M012.",
+        "detected_by": "Sensor Data Analysis",
+        "reported_by": "W012",
+        "reported_to": "S011",
+        "report_id": "R017"
+      },
+      "solution": {
+        "solution_id": "SOL017",
+        "description": "Stabilized foundation and tightened loose bolts.",
+        "executed_by": "W012",
+        "verified_by": "S011"
+      }
+    }
