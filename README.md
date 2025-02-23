@@ -17,7 +17,7 @@ This document contains the proposed implementation of a Knowledge Graph schema d
 
 ---
 
-## **Schema Overview** (Revision)
+## **Schema Overview**
 
 ### **Entities:**
 1. `Machine`: Machinery or devices used in production.
